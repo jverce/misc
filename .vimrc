@@ -60,3 +60,4 @@ set ai
 set smartindent
 set number
 
+set laststatus=2
