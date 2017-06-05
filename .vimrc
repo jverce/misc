@@ -22,6 +22,12 @@ if has("autocmd")
   \ endif
 endif
 
+execute pathogen#infect()
+
+au VimEnter *  NERDTree
+autocmd VimEnter * wincmd p
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 if has("cscope") && filereadable("/usr/bin/cscope")
    set csprg=/usr/bin/cscope
    set csto=0
@@ -50,11 +56,12 @@ if &term=="xterm"
      set t_Sf=[3%dm
 endif
 
-set background=light
+set background=dark
 
 set shiftwidth=4
 set tabstop=4
 set expandtab
+set cc=80
 
 set ai
 set smartindent

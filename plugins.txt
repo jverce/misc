@@ -1,0 +1,4 @@
+nerdtree
+nerdtree-git-plugin
+vim-closetag
+vim-vue
