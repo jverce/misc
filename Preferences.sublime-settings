@@ -9,18 +9,24 @@
 	"caret_extra_bottom": 3,
 	"caret_extra_top": 3,
 	"caret_extra_width": 2,
-	"color_scheme": "Packages/User/brogrammer (SL) (Flake8Lint).tmTheme",
+	"color_scheme": "Packages/Theme - Brogrammer/brogrammer.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.o",
+		"*.pyc"
+	],
 	"find_selected_text": true,
 	"folder_exclude_patterns":
 	[
 		".git*",
 		"*/node_modules/*",
 		"*/staticfiles/*",
-		"*/templates/build/*"
+		"**/build/*",
+		"**/env/*"
 	],
 	"font_face": "Hack",
-	"font_size": 12,
+	"font_size": 10,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -42,6 +48,6 @@
 	"theme": "Seti_orig.sublime-theme",
 	"tooltips": true,
 	"translate_tabs_to_spaces": true,
-	"trim_automatic_white_space": true,
+	"trim_automatic_white_space": false,
 	"trim_trailing_white_space_on_save": true
 }
