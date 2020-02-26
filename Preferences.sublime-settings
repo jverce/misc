@@ -11,15 +11,9 @@
 	"caret_extra_width": 2,
 	"color_scheme": "Packages/Theme - Brogrammer/brogrammer.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	"file_exclude_patterns":
-	[
-		"*.o",
-		"*.pyc"
-	],
 	"find_selected_text": true,
 	"folder_exclude_patterns":
 	[
-		".git*",
 		"*/node_modules/*",
 		"*/staticfiles/*",
 		"**/build/*",
