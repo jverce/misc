@@ -1,0 +1,126 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.wordWrapColumn": 80,
+  "editor.find.seedSearchStringFromSelection": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": false,
+  "window.title": "${activeFolderLong}${separator}${rootName}",
+  "editor.tabSize": 4,
+  "editor.trimAutoWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.parameterHints.enabled": false,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "vs-kubernetes": {
+    "vs-kubernetes.helm-path": "/Users/jay.vercellone/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vs-kubernetes.helm-path.linux": "/home/jay/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vs-kubernetes.minikube-path": "/Users/jay.vercellone/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vs-kubernetes.minikube-path.linux": "/home/jay/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.draft-path": "/Users/jay.vercellone/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+    "vs-kubernetes.draft-path.linux": "/home/jay/.vs-kubernetes/tools/draft/linux-amd64/draft",
+    "vs-kubernetes.kubectl-path": "/Users/jay.vercellone/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.kubectl-path.linux": "/home/jay/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.kubectl-path.mac": "/Users/jay.vercellone/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path.mac": "/Users/jay.vercellone/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vscode-kubernetes.helm-path.mac": "/Users/jay.vercellone/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vscode-kubernetes.minikube-path.linux": "/home/jay/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+  "git.autofetch": true,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.jinja": "jinja"
+  },
+  "explorer.autoReveal": false,
+  "editor.suggestSelection": "first",
+  "aws.onDefaultRegionMissing": "add",
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "aws.profile": "profile:as-dev",
+  "rust-client.rustupPath": "~/.cargo/bin/rustup",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "go.goroot": "/opt/go",
+  "go.formatTool": "gofmt",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "markdown.extension.tableFormatter.enabled": true,
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "markdownlint.run": "onSave",
+  "markdownlint.config": {
+    "default": true
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[python]": {
+    "gitlens.codeLens.symbolScopes": ["!Module"],
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[tfvars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "gitlens.codeLens.scopes": ["document"],
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.validate": ["javascript", "json", "jsonc", "typescript"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.markdownlint": true
+  },
+  "eslint.run": "onSave",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ]
+}
