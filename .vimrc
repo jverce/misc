@@ -1,10 +1,26 @@
+set nocompatible	" Use Vim defaults (much better!)
+filetype off        " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+" Custom plugins
+Plugin 'isruslan/vim-es6'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
    set fileencodings=utf-8,latin1
 endif
 
-set nocompatible	" Use Vim defaults (much better!)
 set bs=indent,eol,start		" allow backspacing over everything in insert mode
-"set ai			" always set autoindenting on
+set ai			" always set autoindenting on
 "set backup		" keep a backup file
 set viminfo='20,\"50	" read/write a .viminfo file, don't store more
 			" than 50 lines of registers
@@ -21,12 +37,6 @@ if has("autocmd")
   \   exe "normal! g'\"" |
   \ endif
 endif
-
-execute pathogen#infect()
-
-au VimEnter *  NERDTree
-autocmd VimEnter * wincmd p
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 if has("cscope") && filereadable("/usr/bin/cscope")
    set csprg=/usr/bin/cscope
@@ -63,8 +73,15 @@ set tabstop=4
 set expandtab
 set cc=80
 
-set ai
 set smartindent
 set number
 
 set laststatus=2
+
+set runtimepath^=~/.vim/bundle/vim-strip-trailing-whitespace/plugin/strip_trailing_whitespace.vim
+
+" For Kubernetes
+autocmd FileType yml,yaml setlocal ts=2 sts=2 sw=2 expandtab
+inoremap jk <Esc>
+cnoremap ke kubectl explain
+
